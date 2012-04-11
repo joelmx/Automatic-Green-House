@@ -1,0 +1,10 @@
+Full spanish description on Auto-Invernader.pdf
+
+English
+-------
+This was a proyect developed for my microcontrollers class.
+Basically we programmed a PIC18f4585 to read temperature and humidity and based on those value activate either a light buld (to produce heat), a sprinkler or a fan.
+
+The program also send the info through a serial cable to a laptop, a python script running on it would read the serial and organize it into a MySQL DB.
+
+And using AJAX we put together a simple website to show some animated graphics about the temperature and humidity, as well as the state of the bulb, fan and sprinkler.
