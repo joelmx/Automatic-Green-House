@@ -1,0 +1,74 @@
+body {
+	background-color:#346800;
+	font:13px Verdana,Arial;
+}
+
+#mainc{
+	width:800px;
+	margin:0 auto;
+}
+
+#top{
+	background: url(../images/top.png) no-repeat top left;
+	position:relative;
+	width:800px;
+	height:57px;
+	z-index:2;
+	
+}
+
+#mbottom{
+	background: url(../images/bottom.png) no-repeat top left;
+	position:relative;
+	padding-left:20px;
+	width:800px;
+	height:58px;
+	z-index:2;
+	#menu{
+		position:relative;
+	}
+}
+
+#status {
+	padding-top:30px;
+}
+
+#bomba, #luz, #ventilador {
+	position:relative;
+	text-align:left;
+	font-size:20px;
+	height:20px;
+	width:120px;
+	border:none;
+	display:inline;
+	/*border-width:2px;*/
+}
+
+#luz {float:left; padding-left:20px;}
+#ventilador {float:center;}
+#bomba {float:right; padding-right:20px;}
+
+#contenido{
+	background: url('../images/fondo.gif') no-repeat bottom right;
+	position:relative;
+	background-color:#fff;
+	min-height:480px;
+	top:-25px;
+	z-index:1;
+}
+
+#texto{
+	margin-left:20px;
+	margin-right:20;
+	padding-top:30px;
+}
+
+h2{
+	color: #346800;
+}
+
+.negro { font-weigth:bold;font-size:12pt; }
+
+a,a:hover { text-decoration:none;color:#a2d062 }
+
+a:visted { text-decoration:none;color:#a2d062 }

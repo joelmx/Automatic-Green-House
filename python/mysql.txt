@@ -1,0 +1,45 @@
+CREATE DATABASE micros;
+
+create user 'micros'@'localhost' identified by 'micros';
+create user 'micros'@'127.0.0.1' identified by 'micros';
+create user 'micros'@'%' identified by 'micros';
+
+GRANT ALL PRIVILEGES ON micros.* TO 'micros'@'localhost';
+GRANT ALL PRIVILEGES ON micros.* TO 'micros'@'127.0.0.1';
+GRANT ALL PRIVILEGES ON micros.* TO 'micros'@'%';
+
+
+// REVOKE ALL PRIVILEGES ON DADFinal.* FROM 'micros'@'localhost';
+// REVOKE ALL PRIVILEGES ON DADFinal.* FROM 'micros'@'127.0.0.1';
+// REVOKE ALL PRIVILEGES ON DADFinal.* FROM 'micros'@'%';
+
+
+CREATE TABLE GreenHouse (
+  id INT(15) UNSIGNED NOT NULL AUTO_INCREMENT,
+  curtmp TINYINT UNSIGNED NOT NULL,
+  mintmp TINYINT UNSIGNED NOT NULL,
+  maxtmp TINYINT UNSIGNED NOT NULL,
+  curhum TINYINT UNSIGNED NOT NULL,
+  curdate DATE NOT NULL,
+  curtime TIME NOT NULL,
+  PRIMARY KEY(id) ) 
+ENGINE=INNODB
+AUTO_INCREMENT = 1;
+
+
+
+
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 22, 20, 30, 83, '2011-04-30', '02:52:33' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 22, 20, 30, 83, '2011-04-30', '02:52:43' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 23, 20, 30, 83, '2011-04-30', '02:52:53' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 24, 20, 30, 83, '2011-04-30', '02:53:03' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 24, 20, 30, 83, '2011-04-30', '02:53:13' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 24, 20, 30, 83, '2011-04-30', '02:53:23' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 25, 20, 30, 83, '2011-04-30', '02:53:33' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 25, 20, 30, 83, '2011-04-30', '02:53:43' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 26, 20, 30, 83, '2011-04-30', '02:53:53' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 25, 20, 30, 83, '2011-04-30', '02:54:03' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 24, 20, 30, 83, '2011-04-30', '02:54:13' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 23, 20, 30, 83, '2011-04-30', '02:54:23' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 23, 20, 30, 83, '2011-04-30', '02:54:33' );
+INSERT INTO GreenHouse( curtmp, mintmp, maxtmp, curhum, curdate, curtime ) VALUES ( 22, 20, 30, 83, '2011-04-30', '02:54:43' );
